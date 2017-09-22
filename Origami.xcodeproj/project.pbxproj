@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		2E9CE3411F754B4400679186 /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9CE3401F754B4400679186 /* LoginController.m */; };
 		2E9CE3451F754C0500679186 /* AXValue+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9CE3441F754C0500679186 /* AXValue+Helper.swift */; };
-		2E9CE3491F754C7700679186 /* AccessibilityElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9CE3481F754C7700679186 /* AccessibilityElement.swift */; };
 		2E9CE34B1F754CF200679186 /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9CE34A1F754CF200679186 /* Observer.swift */; };
 		2E9CE34D1F754E0F00679186 /* Mover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9CE34C1F754E0F00679186 /* Mover.swift */; };
 		2E9CE3501F754E5D00679186 /* MultitouchSupport in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E9CE34F1F754E5D00679186 /* MultitouchSupport */; };
 		2E9CE3521F754F8300679186 /* AccessibilityHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9CE3511F754F8300679186 /* AccessibilityHelper.swift */; };
+		2E9CE3541F75607800679186 /* AccessibilityElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9CE3531F75607800679186 /* AccessibilityElement.swift */; };
 		F47482311F735EBC00A46A96 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47482301F735EBC00A46A96 /* AppDelegate.swift */; };
 		F47482331F735EBC00A46A96 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47482321F735EBC00A46A96 /* ViewController.swift */; };
 		F47482351F735EBC00A46A96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F47482341F735EBC00A46A96 /* Assets.xcassets */; };
@@ -21,16 +21,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2E9CE33F1F754B4400679186 /* Origami-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Origami-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		2E9CE33F1F754B4400679186 /* Origami-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Origami-Bridging-Header.h"; sourceTree = "<group>"; };
 		2E9CE3401F754B4400679186 /* LoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginController.m; sourceTree = "<group>"; };
 		2E9CE3421F754B9800679186 /* LoginController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginController.h; sourceTree = "<group>"; };
 		2E9CE3431F754BDD00679186 /* MultiTouch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MultiTouch.h; sourceTree = "<group>"; };
 		2E9CE3441F754C0500679186 /* AXValue+Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AXValue+Helper.swift"; sourceTree = "<group>"; };
-		2E9CE3481F754C7700679186 /* AccessibilityElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AccessibilityElement.swift; path = ../AccessibilityElement.swift; sourceTree = "<group>"; };
 		2E9CE34A1F754CF200679186 /* Observer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
 		2E9CE34C1F754E0F00679186 /* Mover.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mover.swift; sourceTree = "<group>"; };
 		2E9CE34F1F754E5D00679186 /* MultitouchSupport */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = MultitouchSupport; path = ../../../../../../System/Library/PrivateFrameworks/MultitouchSupport.framework/Versions/A/MultitouchSupport; sourceTree = "<group>"; };
 		2E9CE3511F754F8300679186 /* AccessibilityHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessibilityHelper.swift; sourceTree = "<group>"; };
+		2E9CE3531F75607800679186 /* AccessibilityElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessibilityElement.swift; sourceTree = "<group>"; };
 		F474822D1F735EBC00A46A96 /* Origami.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Origami.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F47482301F735EBC00A46A96 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F47482321F735EBC00A46A96 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -86,8 +86,8 @@
 				F47482361F735EBC00A46A96 /* Main.storyboard */,
 				F47482391F735EBC00A46A96 /* Info.plist */,
 				2E9CE34A1F754CF200679186 /* Observer.swift */,
+				2E9CE3531F75607800679186 /* AccessibilityElement.swift */,
 				2E9CE3511F754F8300679186 /* AccessibilityHelper.swift */,
-				2E9CE3481F754C7700679186 /* AccessibilityElement.swift */,
 				2E9CE3441F754C0500679186 /* AXValue+Helper.swift */,
 				2E9CE3421F754B9800679186 /* LoginController.h */,
 				2E9CE3401F754B4400679186 /* LoginController.m */,
@@ -171,12 +171,12 @@
 			files = (
 				F47482331F735EBC00A46A96 /* ViewController.swift in Sources */,
 				2E9CE34B1F754CF200679186 /* Observer.swift in Sources */,
-				2E9CE3491F754C7700679186 /* AccessibilityElement.swift in Sources */,
 				F47482311F735EBC00A46A96 /* AppDelegate.swift in Sources */,
 				2E9CE3521F754F8300679186 /* AccessibilityHelper.swift in Sources */,
 				2E9CE34D1F754E0F00679186 /* Mover.swift in Sources */,
 				2E9CE3451F754C0500679186 /* AXValue+Helper.swift in Sources */,
 				2E9CE3411F754B4400679186 /* LoginController.m in Sources */,
+				2E9CE3541F75607800679186 /* AccessibilityElement.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,7 +300,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kentywang.Origami;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Origami-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Origami/Origami-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
@@ -320,7 +320,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kentywang.Origami;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Origami-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Origami/Origami-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
