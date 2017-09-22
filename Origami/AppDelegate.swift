@@ -1,12 +1,9 @@
 //
-//  AppDelegate.swift
-//  Origami
-//
-//  Created by Kenty Wang on 9/20/17.
-//  Copyright © 2017 Kenty Wang. All rights reserved.
+//  Copyright © 2017 Kenty Wang and Keith Smiley. All rights reserved.
 //
 
 import Cocoa
+import AppKit
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
@@ -20,6 +17,35 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
         
         constructMenu()
+        
+        AccessibilityHelper.askForAccessibilityIfNeeded()
+        
+        if !LoginController.opensAtLogin() {
+            LoginController.setOpensAtLogin(true)
+        }
+        
+        let mover = Mover()
+        Observer().startObserving { state in
+            mover.state = state
+        }
+        
+        let dev: MTDeviceRef = MTDeviceCreateDefault()
+        
+        MTRegisterContactFrameCallback(dev, {(device, data, num_fingers, timestamp, frame) in
+            let mom = data![0]
+            let dad = data![1]
+            
+            Mover.updateTouchData(device: Int(device),
+                                  one: mom.normalized.position,
+                                  two: dad.normalized.position,
+                                  size: mom.size,
+                                  size2: dad.size,
+                                  num_fingers: Int(num_fingers),
+                                  timestamp: timestamp,
+                                  frame: Int(frame))
+        })
+        
+        MTDeviceStart(dev, 0)
     }
     
     func applicationWillTerminate(_ aNotification: Notification) {

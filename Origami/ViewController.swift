@@ -1,8 +1,4 @@
 //
-//  ViewController.swift
-//  Origami
-//
-//  Created by Kenty Wang on 9/20/17.
 //  Copyright © 2017 Kenty Wang. All rights reserved.
 //
 
