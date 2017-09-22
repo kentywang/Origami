@@ -46,7 +46,7 @@ final class Mover : NSResponder {
     
     static var deltaOriginSinglePt : CGPoint {
         
-        var delta = CGPoint(x: 0,y: 0)
+        var delta = CGPoint(x: 0, y: 0)
         
         delta.x = (f1.x - f1new.x)  * deviceSize.width * dragSensitivity
         delta.y = (f1.y - f1new.y)  * deviceSize.height * dragSensitivity
@@ -61,7 +61,7 @@ final class Mover : NSResponder {
         let y1: CGFloat = max(f1.y, f2.y)
         let y2: CGFloat = max(f1new.y, f2new.y)
         
-        var delta = CGPoint(x: 0,y: 0)
+        var delta = CGPoint(x: 0, y: 0)
         
         delta.x = (x2 - x1)  * deviceSize.width * sensitivity
         delta.y = (y2 - y1)  * deviceSize.height * sensitivity

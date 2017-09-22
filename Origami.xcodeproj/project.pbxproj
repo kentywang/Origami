@@ -88,11 +88,11 @@
 				2E9CE34A1F754CF200679186 /* Observer.swift */,
 				2E9CE3551F75646F00679186 /* AccessibilityElement.swift */,
 				2E9CE3511F754F8300679186 /* AccessibilityHelper.swift */,
-				2E9CE3581F75655700679186 /* Origami-Bridging-Header.h */,
 				2E9CE3441F754C0500679186 /* AXValue+Helper.swift */,
 				2E9CE3421F754B9800679186 /* LoginController.h */,
 				2E9CE3401F754B4400679186 /* LoginController.m */,
 				2E9CE3431F754BDD00679186 /* MultiTouch.h */,
+				2E9CE3581F75655700679186 /* Origami-Bridging-Header.h */,
 			);
 			path = Origami;
 			sourceTree = "<group>";
