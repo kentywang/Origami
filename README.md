@@ -15,4 +15,5 @@ The latest build can be found under [releases](https://github.com/kentywang/Orig
 
 ### Acknowledgements
 Thanks goes to [jnordberg](https://github.com/jnordberg) for figuring out how to retrieve raw multitouch data from the trackpad and also for building a [great visualization app](https://github.com/jnordberg/FingerMgmt) for the data that came in super handy for sensitivity tuning and debugging.
+
 Thanks also goes to [keith](https://github.com/keith) for providing a [nice Swift app](https://github.com/keith/ModMove) that served as this app's base. 
