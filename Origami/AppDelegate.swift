@@ -13,16 +13,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         if let button = statusItem.button {
             button.image = NSImage(named: NSImage.Name(rawValue: "StatusBarItemImage"))
-//            button.action = #selector(woof(_:))
         }
         
         constructMenu()
         
         AccessibilityHelper.askForAccessibilityIfNeeded()
-        
-        if !LoginController.opensAtLogin() {
-            LoginController.setOpensAtLogin(true)
-        }
         
         let mover = Mover()
         Observer().startObserving { state in
@@ -51,10 +46,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationWillTerminate(_ aNotification: Notification) {
         // Insert code here to tear down your application
     }
-    
-//    @objc func woof(_ sender: Any?) {
-//        print("-_-")
-//    }
     
     func constructMenu() {
         let menu = NSMenu()
