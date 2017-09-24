@@ -84,13 +84,13 @@ final class AccessibilityElement {
     }
     
     func bringToFront() {
-        if let isMainWindow = self.rawValue(for: NSAccessibilityMainAttribute) as? Bool, isMainWindow
+        if let isMainWindow = self.rawValue(for: NSAccessibilityAttributeName.main.rawValue) as? Bool, isMainWindow
         {
             return
         }
         
         AXUIElementSetAttributeValue(self.elementRef,
-                                     NSAccessibilityMainAttribute as CFString,
+                                     NSAccessibilityAttributeName.main as CFString,
                                      true as CFTypeRef)
     }
     

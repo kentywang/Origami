@@ -121,10 +121,10 @@ final class Mover : NSResponder {
         if let window = window {
             window.bringToFront()
             
-            let currentPid = NSRunningApplication.current().processIdentifier
+            let currentPid = NSRunningApplication.current.processIdentifier
             
             if let pid = window.pid(), pid != currentPid {
-                NSRunningApplication(processIdentifier: pid)?.activate(options: .activateIgnoringOtherApps)
+                NSRunningApplication(processIdentifier: pid)?.activate(options: NSApplication.ActivationOptions.activateIgnoringOtherApps)
             }
             
             if let position = window.position {
@@ -150,10 +150,10 @@ final class Mover : NSResponder {
         if let window = window {
             window.bringToFront()
             
-            let currentPid = NSRunningApplication.current().processIdentifier
+            let currentPid = NSRunningApplication.current.processIdentifier
             
             if let pid = window.pid(), pid != currentPid {
-                NSRunningApplication(processIdentifier: pid)?.activate(options: .activateIgnoringOtherApps)
+                NSRunningApplication(processIdentifier: pid)?.activate(options: NSApplication.ActivationOptions.activateIgnoringOtherApps)
             }
             
             if let size = window.size, let position = window.position {
