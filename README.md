@@ -1,4 +1,4 @@
-# ![](https://github.com/kentywang/Origami/blob/master/Orikogi/32x32.png) Origami
+# Origami ![](https://github.com/kentywang/Origami/blob/master/Orikogi/24x24.png) 
 
 ### 👩‍💻 Pinch to resize any window
 ![](https://github.com/kentywang/Origami/blob/master/demo.gif)
