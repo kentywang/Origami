@@ -8,7 +8,7 @@ On macOS, there are plenty of trackpad gestures for navigating the desktop envir
 I built this app so that I could resize windows the same way I zoom in and out when looking at photos: by spreading and pinching with two fingers. This means that windows can be resized in all four directions simultaneously and independently.
 
 ### Usage
-Hold down Option (⌥) and Command (⌘) and use one finger to drag the entire window or two fingers to resize it.
+Hold down <kbd>⌥ Option</kbd> and <kbd>⌘ Command</kbd> and use one finger to drag the entire window or two fingers to resize it.
 
 ### Download
 The latest build can be found under [releases](https://github.com/kentywang/Origami/releases/).
